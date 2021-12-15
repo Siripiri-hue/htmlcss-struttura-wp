@@ -6,12 +6,12 @@
 }
 
 header {
-    min-height: 200px;
+    min-height: 150px;
 }
 
 section {
-    min-height: 500px;
-    max-width: 1024px;
+    min-height: 400px;
+    max-width: 1200px;
 }
 
 footer {
@@ -22,9 +22,30 @@ header, section {
     margin: 0 auto 20px;
 }
 
-.littlehead {
+.title {
     min-height: 100px;
     margin-bottom: 10px;
+}
+
+.col, .content {
+    float: left;
+    min-height: 500px;
+}
+
+.col {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.content {
+    width: calc(100% - 250px - 250px - 20px);
+    margin: 0 10px 10px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 /* debug */
